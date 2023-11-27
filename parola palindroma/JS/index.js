@@ -3,6 +3,9 @@
 const parola = prompt("inserisci parola");
 // console.log(parola);
 
+let risultato = controllo();
+console.log(risultato);
+
 // verificare se parola inserita dall'utnte è palindroma o no
 function controllo() {
     // mettere varibile inversa uguale a parola 
@@ -18,9 +21,8 @@ function controllo() {
     console.log(unioneString);
     // verificare se parola è palindroma o no
     if ( parola === unioneString) {
-        console.log("è una parola palindroma");
+        return "è una parola palidroma"
     }else{
-        console.log("non è una parola palindroma");
+       return "non è una parola palindroma"
     }
 }
-controllo();

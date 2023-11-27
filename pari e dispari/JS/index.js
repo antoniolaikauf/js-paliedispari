@@ -6,3 +6,6 @@ console.log(sceltaNumero);
 let choice = prompt("scegli tra pari o dispari");
 console.log(choice);
 
+// function randomNumber() {
+//     let random = 
+// }
