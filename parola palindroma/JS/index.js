@@ -7,7 +7,7 @@ const parola = prompt("inserisci parola");
 function controllo() {
     // mettere varibile inversa uguale a parola 
     let inversa = parola
-    // dividere la parola e la mette in un array 
+    // dividere la parola e la mette in un array per far si che funzioni il reverse
     const divisioneString = inversa.split("")
     console.log(divisioneString);
     // invertire la parola ( inverte l'array)
@@ -24,4 +24,3 @@ function controllo() {
     }
 }
 controllo();
-
