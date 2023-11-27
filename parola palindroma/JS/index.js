@@ -1,8 +1,9 @@
-// chiedere una parol all'utente
 
+// chiedere una parol all'utente
 const parola = prompt("inserisci parola");
 // console.log(parola);
 
+// dichiarzione della funione controllo
 let risultato = controllo();
 console.log(risultato);
 

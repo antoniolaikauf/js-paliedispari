@@ -10,20 +10,10 @@ let choice = prompt("scegli tra pari o dispari");
 let max= 5;
 let min = 1;
 
-// creaione numero random
-function choiceComputer() {
-    let random = Math.floor(Math.random() * max) + min;
-    return  random
-}
-
+// dichiarazioni delle funzioni
 let numero = choiceComputer();
 console.log(numero);
 
-// creazione funzione  calcolo
-function calcolo() {
-    let calcolo = sceltaNumero + numero;
-    return calcolo
-}
 let risultatoCalcolo = calcolo();
 console.log(risultatoCalcolo);
 
@@ -39,4 +29,16 @@ if (choice === "dispari" && risultatoCalcolo % 2 === 1) {
     console.log("hai vinto");
 } else if (choice === "dispari"){
     console.log("hai perso e il computer ha vinto");
+}
+
+// creaione numero random
+function choiceComputer() {
+    let random = Math.floor(Math.random() * max) + min;
+    return  random
+}
+
+// creazione funzione  calcolo
+function calcolo() {
+    let calcolo = sceltaNumero + numero;
+    return calcolo
 }
