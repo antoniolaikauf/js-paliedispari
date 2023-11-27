@@ -4,15 +4,13 @@ const parola = prompt("inserisci parola");
 // console.log(parola);
 
 // dichiarzione della funione controllo
-let risultato = controllo();
+let risultato = reverseString(parola);
 console.log(risultato);
 
 // verificare se parola inserita dall'utnte è palindroma o no
-function controllo() {
-    // mettere varibile inversa uguale a parola 
-    let inversa = parola
+function reverseString(parolaInversa) {
     // dividere la parola e la mette in un array per far si che funzioni il reverse
-    const divisioneString = inversa.split("")
+    const divisioneString = parolaInversa.split("")
     console.log(divisioneString);
     // invertire la parola ( inverte l'array)
     const reverseString = divisioneString.reverse()
