@@ -17,7 +17,7 @@ function controllo() {
     // invertire la parola ( inverte l'array)
     const reverseString = divisioneString.reverse()
     console.log(reverseString);
-    // riunire parola e toglierla dall'array
+    // mettere tutti gli elementi dell'array ( le parole ) in una stringa ( è come togliere l'array)
     const unioneString = reverseString.join("")
     console.log(unioneString);
     // verificare se parola è palindroma o no
