@@ -11,12 +11,12 @@ let max= 5;
 let min = 1;
 
 // creaione numero random
-function randomNumber() {
+function choiceComputer() {
     let random = Math.floor(Math.random() * max) + min;
     return  random
 }
 
-let numero = randomNumber();
+let numero = choiceComputer();
 console.log(numero);
 
 // creazione funzione  calcolo
@@ -27,9 +27,16 @@ function calcolo() {
 let risultatoCalcolo = calcolo();
 console.log(risultatoCalcolo);
 
-// scelta per vedere risultato chi vince con il pari come scelta
+// vedere chi vince con la scelta pari da parte dell'utente
 if (choice === "pari" && risultatoCalcolo % 2 === 0) {
     console.log("utente ha vinto");
-}else{
-    console.log("utente ha perso");
+}else if ( choice === "pari" ){
+    console.log("utente ha perso e il computer ha vinto");
+}
+
+// vedere chi vince con la scelta dispari da parte dell'utente
+if (choice === "dispari" && risultatoCalcolo % 2 === 1) {
+    console.log("hai vinto");
+} else if (choice === "dispari"){
+    console.log("hai perso e il computer ha vinto");
 }
