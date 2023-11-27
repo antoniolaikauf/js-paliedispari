@@ -2,6 +2,10 @@
 // l'altro è per il numero 
 
 let sceltaNumero= parseInt(prompt("scegli numero tra 1 e 5"));
+
+while (sceltaNumero > 5) {
+    sceltaNumero= parseInt(prompt("scegli numero tra 1 e 5"));
+}
 // console.log(sceltaNumero);
 let choice = prompt("scegli tra pari o dispari");
 // console.log(choice);
